@@ -12,11 +12,13 @@ object SampleData {
                 GameItem("Rosto", "Operação", 9.17),
                 GameItem("treinamento", "Aprimoramento da habilidade ", 30.99)
             ) //tentando resolver o erro do meu item
-            // o que fivou para resolver, listOf e o gameItem
+            // o que ficou para resolver, listOf e o gameItem
             // bug e mais bug
-
-
+        ),
+        Game(
+            id = "game2"
+            title = "The Warrior"
         )
-    )
 
+    )
 }
