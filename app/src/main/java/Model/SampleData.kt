@@ -1,6 +1,6 @@
 package Model
 
-object SampleData {
+/*object SampleData {
     val games = listOf(
         Game(
             id = "game1",
@@ -16,9 +16,16 @@ object SampleData {
             // bug e mais bug
         ),
         Game(
-            id = "game2"
-            title = "The Warrior"
+            id = "game2",
+            title = "The Warrior",
+            subtitle = "Ação e muito mais",
+            description = "Seja um guerreiro e desperte o melhor que há em ti",
+            item = listOf(
+                GmaeItem(),
+                GameItem(),
+                GameItem()
+            )
         )
 
     )
-}
+} */
