@@ -11,6 +11,7 @@ data class Game(
     val id: String,
     val title: String,
     val subtitle: String,
+    val coverRes: Int,
     val description: String,
-    val item: GameItem
+    val item: List<GameItem>
 ): Parcelable

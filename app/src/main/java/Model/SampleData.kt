@@ -6,7 +6,7 @@ object SampleData {
             id = "game1",
             title = "EA SPORT UFC 3",
             subtitle = "MMA",
-            coverRest =R.drwa
+            coverRes = R.drawable.cover_ufc,
             description = "O melhor esporte de combate do mundo",
             item = listOf(
                 GameItem("Lutador", " Um novo lutador com habilidades extraordinária", 7.8),
@@ -20,11 +20,12 @@ object SampleData {
             id = "game2",
             title = "The Warrior",
             subtitle = "Ação e muito mais",
+            coverRes = R.drawable.cover_warrior.png,
             description = "Seja um guerreiro e desperte o melhor que há em ti",
             item = listOf(
-                GmaeItem(),
-                GameItem(),
-                GameItem()
+                GameItem("Lutador", " Um novo lutador com habilidades extraordinária", 7.8),
+                GameItem("Rosto", "Operação", 9.17),
+                GameItem("treinamento", "Aprimoramento da habilidade ", 30.99)
             )
         )
 

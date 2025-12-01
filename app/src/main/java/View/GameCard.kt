@@ -40,9 +40,9 @@ fun GameCard(game: Game, onClick: () -> Unit) {
     {
         Row(modifier = Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
 
-            if (game.coverRes != null) {
+            if (game.coverRest != null) {
                 Image(
-                    painter = painterResource(id = game.coverRes),
+                    painter = painterResource(id = game.coverRest),
                     contentDescription = "${game.title} cover",
                     modifier = Modifier.size(65.dp).clip(RoundedCornerShape(8.dp)),
                     contentScale = ContentScale.Crop
@@ -64,6 +64,7 @@ fun GameCard(game: Game, onClick: () -> Unit) {
 
 
 }
+
 
 @Composable
 @Preview(showBackground = true)
