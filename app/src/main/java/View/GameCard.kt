@@ -2,8 +2,6 @@ package View
 
 
 import Model.Game
-import android.R
-import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -40,23 +38,23 @@ fun GameCard(game: Game, onClick: () -> Unit) {
     {
         Row(modifier = Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
 
-            if (game.coverRest != null) {
+            if (game.coverRes != null) {
                 Image(
-                    painter = painterResource(id = game.coverRest),
+                    painter = painterResource(id = game.coverRes),
                     contentDescription = "${game.title} cover",
-                    modifier = Modifier.size(65.dp).clip(RoundedCornerShape(8.dp)),
+                    modifier = Modifier.size(64.dp).clip(RoundedCornerShape(8.dp)),
                     contentScale = ContentScale.Crop
                 )
             } else {
                 Box(
                     modifier = Modifier.size(64.dp)
-                        .background(MaterialTheme.colors.onSurface.copy(0.1f))
+                        .background(MaterialTheme.colorScheme.onSurface.copy(0.1f))
                 )
             }
             Spacer(modifier = Modifier.width(12.dp))
             Column {
-                Text(game.title, style = MaterialTheme.typography.h6)
-                Text(game.subtitle, style = MaterialTheme.typography.body2)
+                Text(game.title, style = MaterialTheme.typography.)
+                Text(game.subtitle, style = MaterialTheme.typography.)
             }
         }
 
