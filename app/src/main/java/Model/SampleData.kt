@@ -1,11 +1,12 @@
 package Model
 
-/*object SampleData {
+object SampleData {
     val games = listOf(
         Game(
             id = "game1",
             title = "EA SPORT UFC 3",
             subtitle = "MMA",
+            coverRest =R.drwa
             description = "O melhor esporte de combate do mundo",
             item = listOf(
                 GameItem("Lutador", " Um novo lutador com habilidades extraordinária", 7.8),
@@ -28,4 +29,4 @@ package Model
         )
 
     )
-} */
+}
