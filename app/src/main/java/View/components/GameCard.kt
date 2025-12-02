@@ -17,25 +17,26 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun GameCard(game: Game, onClick: () -> Unit) {
+    fun GameCard(game: Game, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp)
-            .clickable(onClick = onClick), elevation = 4.dp
+            .clickable(onClick = onClick),
+        //elevation = 4.dp
     )
 
     {
         Box {
             Image(
-                painter = painterResource(id = game.iconRes),
-                contentDescription = game.name, modifier = Modifier
+                painter = painterResource( game.coverRes),
+                contentDescription = game.title, modifier = Modifier
                     .fillMaxWidth()
                     .height(180.dp),
                 contentScale = ContentScale.Crop
             )
             Text(
-                text = game.name,
+                text = game.subtitle,
                 modifier = Modifier
                     .padding(8.dp)
             )

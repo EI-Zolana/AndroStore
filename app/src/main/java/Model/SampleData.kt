@@ -37,9 +37,9 @@ object SampleData {
             coverRes = R.drawable.warrior,
             description = "Seja um guerreiro e desperte o melhor que há em ti",
             item = listOf(
-                GameItem("Lutador", " Um novo lutador com habilidades extraordinária", 7.8),
-                GameItem("Rosto", "Operação", 9.17),
-                GameItem("treinamento", "Aprimoramento da habilidade ", 30.99)
+                GameItem("Lutador", " Um novo lutador com habilidades extraordinária", R.drawable.fight1, "Habilidades incríveis", 12.4),
+                GameItem("Rosto", "Operação", R.drawable.fight2, "Rostos protegidos", 15.5),
+                GameItem("treinamento", "Aprimoramento da habilidade ", R.drawable.u3,"Treinamentos especializados", 25.7)
             )
         )
 
@@ -49,5 +49,5 @@ object SampleData {
 @Preview(showBackground = true)
 @Composable
 fun PreviewGameCard(){
-    GameCard(game = SampleData.games.first(), onClick =  { }
+    GameCard(game = SampleData.games.first(), onClick =  { }  )
 }
