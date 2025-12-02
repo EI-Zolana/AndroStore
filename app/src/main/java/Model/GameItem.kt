@@ -1,5 +1,6 @@
 package Model
 
+import java.io.Serializable
 
 
 data class GameItem(
@@ -7,5 +8,5 @@ data class GameItem(
     val name: String,
     val iconRes: Int,
     val description: String,
-    val price: Double,
-)
+    val price: Double
+) : Serializable

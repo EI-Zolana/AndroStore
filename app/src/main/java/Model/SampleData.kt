@@ -1,8 +1,9 @@
 package Model
 
-import View.GameCard
+import View.components.GameCard
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import pt.iade.ei.androstore.R
 
 object SampleData {
     val games = listOf(
@@ -10,21 +11,30 @@ object SampleData {
             id = "game1",
             title = "EA SPORT UFC 3",
             subtitle = "MMA",
-            coverRes = R.drawable.cover.ufc,
+            coverRes = R.drawable.ufc,
+           // coverRes = R.drawable.cover.ufc,
             description = "O melhor esporte de combate do mundo",
-            item = listOf(
+            items = listOf(
+                GameItem(id = "Lutador",
+                    description = "Um novo lutador com habilidades extraordinárias",
+                    price = 7
+                    )
+            )
+           /* item = listOf(
                 GameItem("Lutador", "Um novo lutador com habilidades extraordinária", 7.8),
                 GameItem("Rosto", "Operação", 9.17),
                 GameItem("treinamento", "Aprimoramento da habilidade ", 30.99)
             ) //tentando resolver o erro do meu item
             // o que ficou para resolver, listOf e o gameItem
             // bug e mais bug
+
+            */
         ),
         Game(
             id = "game2",
             title = "The Warrior",
             subtitle = "Ação e muito mais",
-            coverRes = R.drawable.cover_warrior,
+            coverRes = R.drawable.warrior,
             description = "Seja um guerreiro e desperte o melhor que há em ti",
             item = listOf(
                 GameItem("Lutador", " Um novo lutador com habilidades extraordinária", 7.8),
