@@ -7,19 +7,19 @@ import pt.iade.ei.androstore.R
 
 object SampleData {
     val games = listOf(
-        Game(
-            id = "game1",
-            title = "EA SPORT UFC 3",
-            subtitle = "MMA",
-            coverRes = R.drawable.ufc,
-           // coverRes = R.drawable.cover.ufc,
-            description = "O melhor esporte de combate do mundo",
-            items = listOf(
-                GameItem(id = "Lutador",
-                    description = "Um novo lutador com habilidades extraordinárias",
-                    price = 7
-                    )
-            )
+         Game(
+             id = "game2",
+             title = "The Warrior",
+             subtitle = "Ação e muito mais",
+             coverRes = R.drawable.warrior,
+             description = "Seja um guerreiro e desperte o melhor que há em ti",
+             item = listOf(
+                 GameItem("Lutador", " Um novo lutador com habilidades extraordinária", R.drawable.espada, "MMA", 9.0),
+                 GameItem("Rosto", "Operação", R.drawable.armadura,  "jogo", 9.0),
+                 GameItem("treinamento", "Aprimoramento da habilidade ", R.drawable.escudo, "proteção", 20.0)
+             )
+         ) ,
+
            /* item = listOf(
                 GameItem("Lutador", "Um novo lutador com habilidades extraordinária", 7.8),
                 GameItem("Rosto", "Operação", 9.17),
@@ -29,7 +29,7 @@ object SampleData {
             // bug e mais bug
 
             */
-        ),
+
         Game(
             id = "game2",
             title = "The Warrior",
