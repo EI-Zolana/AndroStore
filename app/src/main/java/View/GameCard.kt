@@ -53,8 +53,8 @@ fun GameCard(game: Game, onClick: () -> Unit) {
             }
             Spacer(modifier = Modifier.width(12.dp))
             Column {
-                Text(game.title, style = MaterialTheme.typography.)
-                Text(game.subtitle, style = MaterialTheme.typography.)
+                Text(game.title, style = MaterialTheme.typography.titleLarge)
+                Text(game.subtitle, style = MaterialTheme.typography.titleMedium)
             }
         }
 

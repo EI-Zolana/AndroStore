@@ -1,9 +1,9 @@
 package Model
 
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
+import kotlinx.serialization.Serializer
+import java.io.Serializable
 
-@Parcelize
+@Serializer
 // data classe game para armazenar os dados
 data class Game(
 //Não vou mudar estes valores
@@ -14,4 +14,4 @@ data class Game(
     val coverRes: Int,
     val description: String,
     val item: List<GameItem>
-): Parcelable
+): Serializable

@@ -1,5 +1,9 @@
 package Model
 
+import View.GameCard
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
+
 object SampleData {
     val games = listOf(
         Game(
@@ -9,7 +13,7 @@ object SampleData {
             coverRes = R.drawable.cover.ufc,
             description = "O melhor esporte de combate do mundo",
             item = listOf(
-                GameItem("Lutador", " Um novo lutador com habilidades extraordinária", 7.8),
+                GameItem("Lutador", "Um novo lutador com habilidades extraordinária", 7.8),
                 GameItem("Rosto", "Operação", 9.17),
                 GameItem("treinamento", "Aprimoramento da habilidade ", 30.99)
             ) //tentando resolver o erro do meu item
@@ -30,4 +34,10 @@ object SampleData {
         )
 
     )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewGameCard(){
+    GameCard(game = SampleData.games.first(), onClick =  { }
 }
