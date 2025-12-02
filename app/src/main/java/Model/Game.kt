@@ -1,12 +1,8 @@
 package Model
 
-import kotlinx.serialization.Serializer
 import java.io.Serializable
-
-@Serializer
 // data classe game para armazenar os dados
 data class Game(
-//Não vou mudar estes valores
     //usei val para declarar os valores que não quero alterar
     val id: String,
     val title: String,
