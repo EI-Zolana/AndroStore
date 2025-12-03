@@ -16,6 +16,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
+
 @Composable
     fun GameCard(game: Game, onClick: () -> Unit) {
     Card(
@@ -32,7 +33,7 @@ import androidx.compose.ui.unit.dp
                 painter = painterResource( game.coverRes),
                 contentDescription = game.title, modifier = Modifier
                     .fillMaxWidth()
-                    .height(180.dp),
+                    .height(150.dp),
                 contentScale = ContentScale.Crop
             )
             Text(

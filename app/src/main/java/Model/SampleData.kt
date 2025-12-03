@@ -14,9 +14,21 @@ object SampleData {
              coverRes = R.drawable.warrior,
              description = "Seja um guerreiro e desperte o melhor que há em ti",
              item = listOf(
-                 GameItem("Lutador", " Um novo lutador com habilidades extraordinária", R.drawable.espada, "MMA", 9.0),
-                 GameItem("Rosto", "Operação", R.drawable.armadura,  "jogo", 9.0),
-                 GameItem("treinamento", "Aprimoramento da habilidade ", R.drawable.escudo, "proteção", 20.0)
+                 GameItem("Lutador",
+                     " Um novo lutador com habilidades extraordinária",
+                     R.drawable.espada,
+                     "MMA",
+                     9.0),
+                 GameItem("Rosto",
+                     "Operação",
+                     R.drawable.armadura,
+                     "jogo",
+                     9.0),
+                 GameItem("treinamento",
+                     "Aprimoramento da habilidade ",
+                     R.drawable.escudo,
+                     "proteção",
+                     20.0)
              )
          ) ,
 
@@ -37,10 +49,24 @@ object SampleData {
             coverRes = R.drawable.warrior,
             description = "Seja um guerreiro e desperte o melhor que há em ti",
             item = listOf(
-                GameItem("Lutador", " Um novo lutador com habilidades extraordinária", R.drawable.fight1, "Habilidades incríveis", 12.4),
-                GameItem("Rosto", "Operação", R.drawable.fight2, "Rostos protegidos", 15.5),
-                GameItem("treinamento", "Aprimoramento da habilidade ", R.drawable.u3,"Treinamentos especializados", 25.7)
+                GameItem("Lutador",
+                    " Um novo lutador com habilidades extraordinária",
+                    R.drawable.fight1,
+                    "Habilidades incríveis",
+                    12.4),
+                GameItem("Rosto",
+                    "Operação",
+                    R.drawable.fight2,
+                    "Rostos protegidos",
+                    15.5),
+
+                GameItem("treinamento",
+                    "Aprimoramento da habilidade ",
+                    R.drawable.u3,
+                    "Treinamentos especializados",
+                    25.7)
             )
+
         )
 
     )
